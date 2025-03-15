@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from QuestLink import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('echo', views.echo),
 ]
