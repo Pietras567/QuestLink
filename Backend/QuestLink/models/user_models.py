@@ -1,7 +1,5 @@
 import sqlalchemy as sa
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from QuestLink.models.db_session import Base
 
 class User(Base):
     __tablename__ = "users"

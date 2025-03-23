@@ -21,5 +21,9 @@ from QuestLink import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('echo', views.echo),
+    path('echo', views.echo, name='echo'),
+    path('login', views.login, name='login'),
+    path('logout', views.logout, name='logout'),
+    path('register', views.register, name='register'),
+    path('refresh', views.token_refresh, name='token_refresh'),
 ]
