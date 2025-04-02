@@ -5,7 +5,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
-      <span class="title has-text-accent">Quest</span><span class="title has-text-accent-secondary">Link</span>
+      <span class="title has-text-accent">Game</span><span class="title has-text-accent-secondary">Nexus</span>
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -21,16 +21,74 @@
         Strona główna
       </a>
 
-      <a class="navbar-item" routerLink="/about">
-        O nas
-      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Społeczność
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" routerLink="/profile">
+            Mój profil
+          </a>
+          <a class="navbar-item" routerLink="/friends">
+            Znajomi
+          </a>
+          <a class="navbar-item" routerLink="/groups">
+            Grupy
+          </a>
+          <a class="navbar-item" routerLink="/messages">
+            Wiadomości
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Wydarzenia
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" routerLink="/tournaments">
+            Turnieje
+          </a>
+          <a class="navbar-item" routerLink="/esports">
+            Esport
+          </a>
+          <a class="navbar-item" routerLink="/events">
+            Nadchodzące wydarzenia
+          </a>
+          <a class="navbar-item" routerLink="/create-event">
+            Utwórz wydarzenie
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Gry
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" routerLink="/games">
+            Przeglądaj gry
+          </a>
+          <a class="navbar-item" routerLink="/recommendations">
+            Rekomendacje
+          </a>
+          <a class="navbar-item" routerLink="/strategies">
+            Strategie
+          </a>
+          <a class="navbar-item" routerLink="/teams">
+            Drużyny
+          </a>
+        </div>
+      </div>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Więcej
         </a>
-
         <div class="navbar-dropdown">
+          <a class="navbar-item" routerLink="/about">
+            O nas
+          </a>
           <a class="navbar-item" routerLink="/contact">
             Kontakt
           </a>
