@@ -1,0 +1,146 @@
+/* Define dark color palette */
+$dark-main: #121212;
+$dark-secondary: #1e1e1e;
+$dark-tertiary: #2c2c2c;
+$dark-accent: #bb86fc;
+$dark-accent-secondary: #03dac6;
+$dark-error: #cf6679;
+$dark-text-primary: #e1e1e1;
+$dark-text-secondary: #a0a0a0;
+
+/* Override Bulma variables */
+$body-background-color: $dark-main;
+$text: $dark-text-primary;
+$text-strong: $dark-text-primary;
+$link: $dark-accent;
+$link-hover: $dark-accent-secondary;
+
+$primary: $dark-accent;
+$info: $dark-accent-secondary;
+$success: #4caf50;
+$warning: #ff9800;
+$danger: $dark-error;
+
+$scheme-main: $dark-main;
+$scheme-main-bis: $dark-secondary;
+$scheme-main-ter: $dark-tertiary;
+
+$background: $dark-secondary;
+
+/* Color override for components */
+$navbar-background-color: $dark-secondary;
+$navbar-item-color: $dark-text-primary;
+$navbar-item-hover-color: $dark-accent;
+$navbar-item-hover-background-color: $dark-tertiary;
+$navbar-dropdown-background-color: $dark-secondary;
+$navbar-dropdown-border-top: 2px solid $dark-accent;
+$navbar-dropdown-arrow: $dark-text-primary;
+
+$card-background-color: $dark-secondary;
+$card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.3);
+
+$button-background-color: $dark-tertiary;
+$button-color: $dark-text-primary;
+$button-border-color: $dark-tertiary;
+
+$input-background-color: $dark-tertiary;
+$input-border-color: $dark-tertiary;
+$input-color: $dark-text-primary;
+$input-hover-border-color: $dark-accent;
+$input-focus-border-color: $dark-accent;
+
+/* Importowanie Bulma po zdefiniowaniu zmiennych */
+@import "../node_modules/bulma/bulma.scss";
+
+/* Global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark-main;
+  color: $dark-text-primary;
+  min-height: 100vh;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Additional styles for better contrast and readability */
+.box {
+  background-color: $dark-secondary;
+  color: $dark-text-primary;
+  box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  color: $dark-text-primary;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: $dark-text-secondary;
+}
+
+/* Styles for various interface elements */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: $dark-secondary;
+  color: $dark-text-secondary;
+}
+
+/* Highlighted Text */
+.has-text-accent {
+  color: $dark-accent !important;
+}
+
+.has-text-accent-secondary {
+  color: $dark-accent-secondary !important;
+}
+
+/* Button Styles */
+.button.is-primary {
+  background-color: $dark-accent;
+  &:hover {
+    background-color: darken($dark-accent, 5%);
+  }
+}
+
+.button.is-info {
+  background-color: $dark-accent-secondary;
+  &:hover {
+    background-color: darken($dark-accent-secondary, 5%);
+  }
+}
+
+/* Additional Visual Effects */
+.card, .box, .panel {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Transition Animations */
+.fade-transition {
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-tertiary;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-accent;
+}
